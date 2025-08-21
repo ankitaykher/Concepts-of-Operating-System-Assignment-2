@@ -236,7 +236,49 @@ do
                                     echo "The square of $number is: $sq"
                                     
 done
-#
+
+
+
+part-e
+
+1. Consider the following processes with arrival times and burst times:
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 5 |
+| P2 | 1 | 3 |
+| P3 | 2 | 6 |
+Calculate the average waiting time using First-Come, First-Served (FCFS) scheduling.
+2. Consider the following processes with arrival times and burst times:
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 3 |
+| P2 | 1 | 5 |
+| P3 | 2 | 1 |
+| P4 | 3 | 4 |
+Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
+
+3. Consider the following processes with arrival times, burst times, and priorities (lower number
+indicates higher priority):
+| Process | Arrival Time | Burst Time | Priority |
+|---------|--------------|------------|----------|
+| P1 | 0 | 6 | 3 |
+| P2 | 1 | 4 | 1 |
+| P3 | 2 | 7 | 4 |
+| P4 | 3 | 2 | 2 |
+Calculate the average waiting time using Priority Scheduling.
+4. Consider the following processes with arrival times and burst times, and the time quantum for
+Round Robin scheduling is 2 units:
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 4 |
+| P2 | 1 | 5 |
+| P3 | 2 | 2 |
+| P4 | 3 | 3 |
+Calculate the average turnaround time using Round Robin scheduling.
+5. Consider a program that uses the fork() system call to create a child process. Initially, the parent
+process has a variable x with a value of 5. After forking, both the parent and child processes
+increment the value of x by 1.
+What will be the final values of x in the parent and child processes after the fork() call?
 
   
 
