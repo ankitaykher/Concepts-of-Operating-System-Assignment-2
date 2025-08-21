@@ -102,7 +102,7 @@ Identify the Incorrect Commands:
 -> All the command Incorrect
 
 
-                                                                                                                part - c
+part - c
 
 
 
@@ -255,6 +255,7 @@ done
 part-e
 
 1. Consider the following processes with arrival times and burst times:
+   
 | Process | Arrival Time | Burst Time |
 |---------|--------------|------------|
 | P1      |  0            | 5         |
@@ -271,9 +272,13 @@ Calculate the average waiting time using First-Come, First-Served (FCFS) schedul
 
 
 
-                         0+4+6
-Average waiting time  = ---------   = 10/3  =  3.33
-                           3
+                        
+Average waiting time  =    0+4+6
+
+                      = 10/3  
+
+                      = 3.33
+                           
 
                           
 
@@ -288,9 +293,13 @@ Average waiting time  = ---------   = 10/3  =  3.33
 
 Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
 
-                           3+12+2+5
-  Turnaround time Avg  =   --------    = 5.5
-                              4    
+                           
+  Turnaround time Avg  =   3+12+2+5  
+  
+                       = 22 /4   
+  
+                       = 5.5
+                            
      
 
 
@@ -300,9 +309,9 @@ Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
 | Process | Arrival Time | Burst Time | Priority |
 |---------|--------------|------------|----------|
 | P1      | 0            | 6          | 3        |
-| P2      | 1            | 4          | 1 |
-| P3      | 2            | 7          | 4 |
-| P4      | 3            | 2          | 2 |
+| P2      | 1            | 4          | 1        |
+| P3      | 2            | 7          | 4        |
+| P4      | 3            | 2          | 2        |
 
 Calculate the average waiting time using Priority Scheduling.
 
