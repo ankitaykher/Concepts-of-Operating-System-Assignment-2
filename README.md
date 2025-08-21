@@ -4,6 +4,7 @@
 
  
 What will the following commands do?
+
 echo "Hello, World!"                               //  this command print the output
 
 name="Productive"                              //  name is assign value 
@@ -48,32 +49,41 @@ touch file.txt                              // create file from this command
   echo $PATH                                //  Show directories where commands are searched.
 
 
-              ------------------------------------------------------------------------------- Part -B ---------------------------------------------------------------------------------------------
+  Part -B 
 
   Identify True or False:
 
-  Identify True or False:
+  
 1. ls is used to list files and directories in a directory.
+   
 ->   true
+   
 3. mv is used to move files and directories.
+   
 -> true
    
 5. cd is used to copy files and directories.
+   
 ->false
 
 7. pwd stands for "print working directory" and displays the current directory
+   
 ->true
 
 9. grep is used to search for patterns in files.
+    
 ->true
 
 6. chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute permissions to group and others.
-   true
+   
+-> true
    
 8. mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1 if directory1 does not exist.
+   
 -> true
    
 10. rm -rf file.txt deletes a file forcefully without confirmation
+    
 ->  true
 
 
