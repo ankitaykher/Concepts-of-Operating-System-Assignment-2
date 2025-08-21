@@ -244,42 +244,104 @@ part-e
 1. Consider the following processes with arrival times and burst times:
 | Process | Arrival Time | Burst Time |
 |---------|--------------|------------|
-| P1 | 0 | 5 |
-| P2 | 1 | 3 |
-| P3 | 2 | 6 |
+| P1      |  0            | 5         |
+| P2      |  1            | 3         |
+| P3      |  2            | 6         |
+
 Calculate the average waiting time using First-Come, First-Served (FCFS) scheduling.
+
+| Process | Arrival Time | completion time | Total Arrival Time  |  waiting time = total AT - BT
+|---------|--------------|------------     | ------------------  |-------------------------------
+| P1 |            0      |    5            |      5              |    0
+| P2 |            1      |    8            |      7              |    4
+| P3 |            2      |    14           |      12             |    6
+
+
+
+                         0+4+6
+Average waiting time  = ---------   = 10/3  =  3.33
+                           3
+
+                          
+
 2. Consider the following processes with arrival times and burst times:
-| Process | Arrival Time | Burst Time |
-|---------|--------------|------------|
-| P1 | 0 | 3 |
-| P2 | 1 | 5 |
-| P3 | 2 | 1 |
-| P4 | 3 | 4 |
+   
+| Process | Arrival Time | Burst Time | complete time |  Complete time - Arrival time = turnaround time |
+|---------|--------------|------------|---------------|------------------------------------------------- 
+| P1      | 0            | 3          |    3          |     3
+| P2      | 1            | 5          |    13         |     12
+| P3      | 2            | 1          |    4          |     2
+| P4      | 3            | 4          |    8          |     5
+
 Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
 
-3. Consider the following processes with arrival times, burst times, and priorities (lower number
-indicates higher priority):
+                           3+12+2+5
+  Turnaround time Avg  =   --------    = 5.5
+                              4    
+     
+
+
+
+
+3. Consider the following processes with arrival times, burst times, and priorities (lower number indicates higher priority):
 | Process | Arrival Time | Burst Time | Priority |
 |---------|--------------|------------|----------|
-| P1 | 0 | 6 | 3 |
-| P2 | 1 | 4 | 1 |
-| P3 | 2 | 7 | 4 |
-| P4 | 3 | 2 | 2 |
+| P1      | 0            | 6          | 3        |
+| P2      | 1            | 4          | 1 |
+| P3      | 2            | 7          | 4 |
+| P4      | 3            | 2          | 2 |
+
 Calculate the average waiting time using Priority Scheduling.
-4. Consider the following processes with arrival times and burst times, and the time quantum for
-Round Robin scheduling is 2 units:
+
+-->
+| Process |  AT |  BT |  CT | TAT = CT−AT | WT = TAT−BT |
+| ------: |     |     |     | ---------   | ---------|
+|      P1 |  0  |  6  |  6  |  6 − 0 = 6  |  6 − 6 = 0  |
+|      P2 |  1  |  4  |  10 |  10 − 1 = 9 |  9 − 4 = 5  |
+|      P3 |  2  |  7  |  19 | 19 − 2 = 17 | 17 − 7 = 10 |
+|      P4 |  3  |  2  |  12 |  12 − 3 = 9 |  9 − 2 = 7  |
+
+
+
+
+grant chart
+
+|  P1  |   P2   | P4 |     P3     |
+0      6        10   12          19
+
+4. Consider the following processes with arrival times and burst times, and the time quantum forRound Robin scheduling is 2 units:
 | Process | Arrival Time | Burst Time |
 |---------|--------------|------------|
-| P1 | 0 | 4 |
-| P2 | 1 | 5 |
-| P3 | 2 | 2 |
-| P4 | 3 | 3 |
+| P1      | 0 | 4 |
+| P2      | 1 | 5 |
+| P3      | 2 | 2 |
+| P4      | 3 | 3 |
+
 Calculate the average turnaround time using Round Robin scheduling.
-5. Consider a program that uses the fork() system call to create a child process. Initially, the parent
-process has a variable x with a value of 5. After forking, both the parent and child processes
-increment the value of x by 1.
+-->
+
+
+| Process | AT | BT | CT | TAT = CT−AT |
+| ------- | -- | -- | -- | ----------- |
+| P1      | 0  | 4  | 8  | 8           |
+| P2      | 1  | 5  | 14 | 13          |
+| P3      | 2  | 2  | 6  | 4           |
+| P4      | 3  | 3  | 13 | 10          |
+
+
+8+13+4+10
+---------   =  35/4  =8.4
+  4
+
+
+5. Consider a program that uses the fork() system call to create a child process. Initially, the parent process has a variable x with a value of 5. After forking, both the parent and child processes increment the value of x by 1.
 What will be the final values of x in the parent and child processes after the fork() call?
 
+
+-->  parent process = 5
+     X++
+     x = x+1
+       = 6
   
 
 
