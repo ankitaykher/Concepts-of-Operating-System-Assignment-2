@@ -1,5 +1,8 @@
 # Concepts-of-Operating-System-Assignment-2
+
  part-A 
+
+ 
 What will the following commands do?
 echo "Hello, World!"                               //  this command print the output
 
