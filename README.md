@@ -318,6 +318,8 @@ Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
 Calculate the average waiting time using Priority Scheduling.
 
 -->
+
+
 | Process |  AT |  BT |  CT | TAT = CT−AT | WT = TAT−BT |
 | ------: |     |     |     | ---------   | ---------|
 |      P1 |  0  |  6  |  6  |  6 − 0 = 6  |  6 − 6 = 0  |
