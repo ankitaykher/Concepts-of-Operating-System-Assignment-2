@@ -273,7 +273,7 @@ Calculate the average waiting time using First-Come, First-Served (FCFS) schedul
 
 
                         
-Average waiting time  =    0+4+6
+Average waiting time  =  0+4+6
 
                       = 10/3  
 
@@ -320,12 +320,18 @@ Calculate the average waiting time using Priority Scheduling.
 -->
 
 
-| Process |  AT |  BT |  CT | TAT = CT−AT | WT = TAT−BT |
-| ------: |     |     |     | ---------   | ---------|
-|      P1 |  0  |  6  |  6  |  6 − 0 = 6  |  6 − 6 = 0  |
-|      P2 |  1  |  4  |  10 |  10 − 1 = 9 |  9 − 4 = 5  |
-|      P3 |  2  |  7  |  19 | 19 − 2 = 17 | 17 − 7 = 10 |
-|      P4 |  3  |  2  |  12 |  12 − 3 = 9 |  9 − 2 = 7  |
+| Process | Arrival | Burst | Completion | Turnaround (CT–AT) | Waiting (TAT–BT) |
+| ------- | ------- | ----- | ---------- | ------------------ | ---------------- |
+| P1      | 0       | 6     | 12         | 12 – 0 = 12        | 12 – 6 = 6       |
+| P2      | 1       | 4     | 5          | 5 – 1 = 4          | 4 – 4 = 0        |
+| P3      | 2       | 7     | 19         | 19 – 2 = 17        | 17 – 7 = 10      |
+| P4      | 3       | 2     | 7          | 7 – 3 = 4          | 4 – 2 = 2        |
+
+TWT = 6+0+10+2​
+    = 18/4
+    ​= 4.5
+
+
 
 
 
