@@ -306,6 +306,8 @@ Calculate the average turnaround time using Shortest Job First (SJF) scheduling.
 
 
 3. Consider the following processes with arrival times, burst times, and priorities (lower number indicates higher priority):
+
+   
 | Process | Arrival Time | Burst Time | Priority |
 |---------|--------------|------------|----------|
 | P1      | 0            | 6          | 3        |
@@ -332,6 +334,8 @@ grant chart
 0      6        10   12          19
 
 4. Consider the following processes with arrival times and burst times, and the time quantum forRound Robin scheduling is 2 units:
+
+   
 | Process | Arrival Time | Burst Time |
 |---------|--------------|------------|
 | P1      | 0 | 4 |
