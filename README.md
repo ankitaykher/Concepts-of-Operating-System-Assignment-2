@@ -114,38 +114,55 @@ Question 2: Declare a variable named "name" and assign the value "CDAC Mumbai" t
 value of the variable.
 
 -> #!/bin/bash
+
    name="CDAC Mumbai"
+
    echo "The value of name is: $name"
+   
 
 Question 3: Write a shell script that takes a number as input from the user and prints it.
+
 -> 
+
 read -p "Enter a number: " number
+
 echo "You entered: $number"
 
 
 Question 4: Write a shell script that performs addition of two numbers (e.g., 5 and 3) and prints the
 result.
 
--> num1 = 5
+-> 
+   num1 = 5
 
    num2 = 3
    
    sum=$((num1 + num2))
 
    echo " sum the number  $num1 and $num2 is : $sum
+   
   
 Question 5: Write a shell script that takes a number as input and prints "Even" if it is even, otherwise
 prints "Odd".
--> #!/bin/bash
+->
+
+#!/bin/bash
+
 read -p "Enter a number: " number
+
 if [ $((number % 2)) -eq 0 ]; then
+
     echo "Even"
+    
 else
+
     echo "Odd"
+    
 fi
 
 
 Question 6: Write a shell script that uses a for loop to print numbers from 1 to 5.
+
 for i (1..5)
 
 do 
@@ -159,9 +176,12 @@ Question 7: Write a shell script that uses a while loop to print numbers from 1 
 #!/bin/bash
 
 i=1
+
 while [ $i -le 5 ]
+
 do
     echo $i
+    
     ((i++))
     
 done
