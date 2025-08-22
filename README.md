@@ -19,7 +19,7 @@ touch file.txt                              // create file from this command
 
  mv file.txt /path/to/directory/    // move file path to dir
 
- chmod 755 script.sh              // chane mode give permission to script.sh
+ chmod 755 script.sh              // change mode used to set permissions on a file or directory (755)- This is an octal number present permissions for owner, group, and others
 
  grep "pattern" file.txt         //  search for specific what you want like check pattern of txt file
 
