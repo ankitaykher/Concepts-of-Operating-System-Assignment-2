@@ -5,10 +5,10 @@
  
 What will the following commands do?
 
-echo "Hello, World!"                               //  this command print the output
+echo "Hello, World!"                                                               //  this command print the output
 
 
-name="Productive"                              //  name is assign value 
+name="Productive"                                                                //  name is assign value 
 
 
 
