@@ -5,92 +5,52 @@
  
 What will the following commands do?
 
-echo "Hello, World!"                                                               //  this command print the output
+echo "Hello, World!"                         # this command print the output
+
+name="Productive"                            # name is assign value
+
+touch file.txt                               # create file from this command
+
+ls -a                                        # list all folder and directory includimg hiddend one
+
+rm file.txt                                  # remove file.txt
+
+cp file1.txt file2.txt                       # copy file 1 from to file2
+
+mv file.txt /path/to/directory/              # move file path to dir
+
+chmod 755 script.sh                          # change mode used to set permissions on a file or directory (755)- This is an octal number present permissions for owner, group, and others
+
+grep "pattern" file.txt                      # search for specific what you want like check pattern of txt file
+
+kill PID                                     # Send a signal for process id
+
+mkdir mydir && cd mydir && touch file.txt && \
+echo "Hello, World!" > file.txt && cat file.txt   # makr directory && Logical AND operator runs the next command only if the previous command succeeds make txt file && print command to file.txt and diplay help hot cat
+
+ls -l | grep ".txt"                          # Lists all files and directories in the current directory (|) this call pipe send output next command and search specific file .txt
+
+cat file1.txt file2.txt | sort | uniq        # display file.1 and file 2 and send output for sorting uniq line which in include in this file
+
+ls -l | grep "^d"                            # Lists all files and directories in the current directory and send output (|) and search specific (d) ilters lines that start with d
+
+grep -r "pattern" /path/to/directory/        # Tells grep to search inside all files in the specified directory and its subdirectories (-r) stands for recursive Search recursively (-r) inside all files and subdirectories of /path/to/directory/ for the word or pattern "pattern" and print all matching lines along with their file names.
+
+cat file1.txt file2.txt | sort | uniq -d     # Concatenate file1.txt and file2.txt (cat file1.txt file2.txt), sort all lines alphabetically (sort), and then print only the lines that appear more than once (uniq -d), effectively showing duplicates across the two files.
+
+chmod 644 file.txt                           # Change the permissions of file.txt so that the owner can read and write 644 -> 6 owner read + write 4+2=6 ,4 group ,4 other
+
+cp -r source_directory destination_directory # copy all files inside subdirectory into destination_directory
+
+find /path/to/search -name "*.txt"           # find path and search name Search from /path/to/search for all files ending with .txt and print their paths.
+
+chmod u+x file.txt                           # change mode add execution permission for owner
+
+echo $PATH                                   # Show directories where commands are searched.
 
 
-name="Productive"                                                                //  name is assign value 
 
-
-
-touch file.txt                              // create file from this command
-
-
-
- ls -a                                    // list all folder and directory includimg hiddend one
-
- 
-
- rm file.txt                            // remove file.txt
- 
-
- cp file1.txt file2.txt              // copy file 1 from to file2
-
- 
-
- mv file.txt /path/to/directory/    // move file path to dir
- 
-
- chmod 755 script.sh              // change mode used to set permissions on a file or directory (755)- This is an octal number present permissions for owner, group, and others
- 
-
- grep "pattern" file.txt         //  search for specific what you want like check pattern of txt file
- 
-
- kill PID                       // Send a signal for process id
-
- 
-
- mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt  // makr directory && Logical AND operator runs the next command only if the previous command succeeds make txt file && print command to                                                                                                          file.txt  and diplay help hot cat
-
- 
-
-  ls -l | grep ".txt"                      // Lists all files and directories in the current directory (|)  this call pipe send output next command and search specific file .txt
-
-  
-
-  cat file1.txt file2.txt | sort | uniq   // display file.1 and file 2 and send output for sorting uniq line which in include in this file
-
-  
-
-  ls -l | grep "^d"            //Lists all files and directories in the current directory and send output (|) and search specific  (d) ilters lines that start with d 
-
-  
-
-  grep -r "pattern" /path/to/directory/      //Tells grep to search inside all files in the specified directory and its subdirectories (-r) stands for recursive Search recursively (-r) inside all files and subdirectories of                                                                   /path/to/directory/ for the word or pattern "pattern" and print all matching lines along with their file names.
-
-
-  
-
-  cat file1.txt file2.txt | sort | uniq –d        // Concatenate file1.txt and file2.txt (cat file1.txt file2.txt), sort all lines alphabetically (sort), and then print only the lines that appear more than once (uniq -d), effectively                                                          showing duplicates across the two files.
-
-
-  
-
-  chmod 644 file.txt                               // Change the permissions of file.txt so that the owner can read and write  644 -> 6 owner  read + write 4+2=6 ,4 group ,4 other
-
-  
-
-
-  cp -r source_directory destination_directory   //  copy all files inside subdirectory into destination_directory
-
-
-  
-  
-  find /path/to/search -name "*.txt"            // find path and search name Search from /path/to/search for all files ending with .txt and print their paths.
-
-
-  
-  
-  chmod u+x file.txt                          // change mode add execution permission for owner 
-
-  
-  
-  echo $PATH                                //  Show directories where commands are searched.
-
-  
-
-
-  Part -B 
+  -------- Part -B ----------- 
 
   
 
@@ -145,7 +105,7 @@ Identify the Incorrect Commands:
 -> All the command Incorrect
 
 
-part - c
+------- part - c ------------
 
 
 
